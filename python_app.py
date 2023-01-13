@@ -4,7 +4,7 @@ exit = False
 user_points = 0
 computer_points = 0
 
-while exit = False:
+while exit == False:
     options = ["rock", "paper", "scissors"]
     user_input = input("Choose rock, paper, or scissors or exit")
     computer_input = random.choice(options)
@@ -60,3 +60,6 @@ while exit = False:
             print("Computer input is paper")
             print("You win!")
             user_points += 1
+
+    elif user_input != "rock" or user_input != "paper" or user_input != "scissors":
+        print("Invalid input")
