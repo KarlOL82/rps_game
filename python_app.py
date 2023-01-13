@@ -6,11 +6,12 @@ computer_points = 0
 
 while exit == False:
     options = ["rock", "paper", "scissors"]
-    user_input = input("Choose rock, paper, or scissors or exit")
+    user_input = input("Choose rock, paper, or scissors or exit: ")
     computer_input = random.choice(options)
 
     if user_input == "exit":
         print("Game ended")
+        print("Your total score is "+user_points+"and the computer score is " +computer_points)
         exit = True
 
     if user_input == "rock":
