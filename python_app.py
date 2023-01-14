@@ -11,7 +11,7 @@ while exit == False:
 
     if user_input == "exit":
         print("Game ended")
-        print("Your total score is "+str(user_points)+" and the computer score is " +str(computer_points))
+        print("Your total score is "+str(user_points)+" and the computer's total score is " +str(computer_points))
         exit = True
 
     if user_input == "rock":
@@ -72,5 +72,5 @@ while exit == False:
             user_points += 1
 
     elif user_input != "rock" or user_input != "paper" or user_input != "scissors":
-        print("Invalid input")
+        print("Invalid input. Please choose a valid option")
         print("")
